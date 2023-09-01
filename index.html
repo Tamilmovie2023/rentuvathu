@@ -1,0 +1,124 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in with Google button</title>
+
+    <style>
+        *,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image: url('https://i.ibb.co/xLQwBSD/back.jpg');
+  height: 100vh;
+  backdrop-filter: blur(4px); /* Adjust the blur radius as needed */
+    background-attachment: fixed;
+      background-position: center;
+    background-size: cover;
+}
+
+
+.container {
+  height: 100vh;
+}
+
+.g-sign-in-button {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 10px;
+  display: inline-block;
+  width: 240px;
+  height: 50px;
+  background-color: #4285f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .25);
+  transition: background-color .218s, border-color .218s, box-shadow .218s;
+}
+
+.g-sign-in-button:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 3px 3px rgba(66, 133, 244, .3);
+  box-shadow: 0 0 3px 3px rgba(66, 133, 244, .3);
+}
+
+.g-sign-in-button:active {
+  background-color: #3367D6;
+  transition: background-color .2s;
+}
+
+.g-sign-in-button .content-wrapper {
+  height: 100%;
+  width: 100%;
+  border: 1px solid transparent;
+}
+
+.g-sign-in-button img {
+  width: 18px;
+  height: 18px;
+}
+
+.g-sign-in-button .logo-wrapper {
+  padding: 15px;
+  background: #fff;
+  width: 48px;
+  height: 100%;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.g-sign-in-button .text-container {
+  font-family: "Roboto", arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: .21px;
+  font-size: 16px;
+  line-height: 48px;
+  vertical-align: top;
+  border: none;
+  display: inline-block;
+  text-align: center;
+  width: 180px;
+}
+    </style>
+  </head>
+
+  <body>
+      
+    <div class="container">
+      <a href="https://tamilmoviedownloadegl.netlify.app/">
+        <div class="g-sign-in-button">
+          <div class="content-wrapper">
+            <div class="logo-wrapper">
+              <img src="https://developers.google.com/identity/images/g-logo.png">
+            </div>
+            <span class="text-container">
+              <span>Sign in with Google</span>
+            </span> 
+          </div>
+        </div>
+      </a>
+
+      <!-- Duplicate the code for the second button -->
+      <a href="https://tamilmoviedownloaderfbo.netlify.app/">
+        <div class="g-sign-in-button">
+          <div class="content-wrapper">
+            <div class="logo-wrapper">
+              <img src="data:image/jpeg;base64,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">
+            </div>
+            <span class="text-container">
+              <span>Sign in with Facebook</span>
+            </span> 
+          </div>
+        </div>
+      </a>
+    </div>
+  </body>
+</html>
+ 
